@@ -1,0 +1,30 @@
+classDiagram
+    iPhone --|> ReprodutorMusical
+    iPhone --|> AparelhoTelefonico
+    iPhone --|> NavegadorInternet
+    
+    iPhone : +selecionarMusica()void
+    iPhone : +pausar()void
+    iPhone : +tocar()void
+    iPhone : +ligar(numero String)void
+    iPhone : +atender(numero String)void
+    iPhone : +iniciarCorreioVoz(numero String)void
+    iPhone : +exibirPagia(url String)void
+    iPhone : +adicionarNovaAba(url String)void
+    iPhone : +atualizarPagina()void
+
+    class ReprodutorMusical{
+      +tocar()void
+      +pausar()void
+      +selecionarMusica()void
+    }
+    class AparelhoTelefonico{
+      +ligar(numero : String)void
+      +atender(numero : String)void
+      +iniciarCorreioVoz(numero : String)void
+    }
+    class NavegadorInternet{
+      +exibirPagia(url : String)void
+      +adicionarNovaAba(url : String)void
+      +atualizarPagina()void
+    } 
